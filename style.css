@@ -383,6 +383,13 @@ input:checked + label + .wrapper {
 	.btn-flex {
 		gap: 1rem;
 	}
+	.head-text {
+		font-size: 16px;
+	}
+	.sub-text,
+	.see-more {
+		font-size: 12px;
+	}
 }
 
 @media screen and (max-width: 640px) {

@@ -24,10 +24,10 @@ img {
 
 /* navbar */
 .nav-container {
-	position: sticky;
+	/* position: sticky;
 	z-index: 99;
 	background: #fff;
-	top: 0;
+	top: 0; */
 }
 .nav {
 	display: flex;

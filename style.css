@@ -39,6 +39,10 @@ img {
 	margin: auto;
 }
 
+.logo {
+	flex-grow: 1;
+}
+
 .logo p {
 	color: #0b0b23;
 	font-size: 28px;

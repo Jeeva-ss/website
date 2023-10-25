@@ -364,10 +364,6 @@ input:checked + label + .wrapper {
 	padding: 1rem;
 	font-size: 14px;
 	text-align: center;
-	position: sticky;
-	z-index: 99;
-	background: #fff;
-	bottom: 0;
 }
 
 .footer p:first-child {

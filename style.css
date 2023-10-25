@@ -13,6 +13,45 @@ body {
 	background: #fff;
 }
 
+.nav {
+	display: flex;
+	justify-content: space-between;
+	min-height: 10vh;
+	align-items: center;
+	padding: 1rem 0;
+	width: 90%;
+	margin: auto;
+}
+
+.logo p {
+	color: #0b0b23;
+	font-family: Montserrat;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.navlist {
+	display: flex;
+	gap: 1rem;
+}
+
+.navlist li {
+	list-style: none;
+}
+
+.navlist li a {
+	text-decoration: none;
+	color: #000;
+	text-align: right;
+	font-family: Montserrat;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
 .header {
 	height: 500px;
 	background: linear-gradient(rgba(17, 23, 40, 0.8), rgba(17, 23, 40, 0.8)),
@@ -128,13 +167,12 @@ input:checked + label + .wrapper {
 .cards-container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
 	gap: 2rem;
 	background: #eaf0f6;
 }
 
 .card {
-	flex: 1 1 30%;
+	flex: 0 1 30%;
 	height: 475px;
 	border-radius: 20px;
 	border: 1px solid #ddf6f0;
@@ -303,6 +341,15 @@ input:checked + label + .wrapper {
 }
 
 /* Responsive */
+
+@media screen and (min-width: 1536px) {
+	.header,
+	.nav {
+		margin: auto;
+		max-width: 1100px;
+	}
+}
+
 @media screen and (max-width: 1280px) {
 	.accordion {
 		width: 90%;
@@ -312,14 +359,14 @@ input:checked + label + .wrapper {
 
 @media screen and (max-width: 1024px) {
 	.card {
-		flex: 1 1 30%;
+		flex: 0 1 30%;
 		height: auto;
 	}
 }
 
 @media screen and (max-width: 992px) {
 	.card {
-		flex: 1 1 33%;
+		flex: 0 1 45%;
 		height: auto;
 	}
 }
@@ -357,7 +404,7 @@ input:checked + label + .wrapper {
 		padding: 8px 16px;
 	}
 	.card {
-		flex: 1 1 33%;
+		flex: 0 1 45%;
 		height: auto;
 	}
 	.btn-outline,
@@ -388,10 +435,20 @@ input:checked + label + .wrapper {
 	.sub-form input {
 		width: 100%;
 	}
+	.nav {
+		width: 100%;
+		padding: 0.5rem 1rem;
+	}
+	.logo p {
+		font-size: 18px;
+	}
+	.navlist li a {
+		font-size: 12px;
+	}
 }
 
 @media screen and (max-width: 576px) {
 	.card {
-		flex: 1 1 auto;
+		flex: 0 1 auto;
 	}
 }

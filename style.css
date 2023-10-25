@@ -99,8 +99,6 @@ input:checked + label + .wrapper {
 
 .card-container {
 	padding: 2rem;
-	border-radius: 0px 0px 5px 5px;
-	border: 1px solid #eff2f9;
 	background: #eaf0f6;
 }
 
@@ -383,6 +381,12 @@ input:checked + label + .wrapper {
 	}
 	.btn-text {
 		font-size: 12px;
+	}
+	.btn-green {
+		width: 100%;
+	}
+	.sub-form input {
+		width: 100%;
 	}
 }
 

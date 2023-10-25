@@ -25,7 +25,6 @@ body {
 
 .logo p {
 	color: #0b0b23;
-	font-family: Montserrat;
 	font-size: 28px;
 	font-style: normal;
 	font-weight: 700;
@@ -45,7 +44,6 @@ body {
 	text-decoration: none;
 	color: #000;
 	text-align: right;
-	font-family: Montserrat;
 	font-size: 15px;
 	font-style: normal;
 	font-weight: 500;
@@ -101,6 +99,9 @@ label {
 	font-style: normal;
 	font-weight: 600;
 	line-height: normal;
+	height: 70px;
+	display: flex;
+	align-items: center;
 }
 
 label::after {
@@ -109,8 +110,7 @@ label::after {
 	font-size: 22px;
 	font-weight: 600;
 	position: absolute;
-	right: 30px;
-	top: 6px;
+	right: 25px;
 }
 
 input:checked + label::after {
@@ -141,11 +141,15 @@ input:checked + label + .wrapper {
 .card-container {
 	padding: 2rem;
 	background: #eaf0f6;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.mod {
+	border-radius: 0px 0px 0px 0px;
 }
 
 .name {
 	color: #2e3a5e;
-	font-family: Montserrat;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 700;
@@ -171,6 +175,7 @@ input:checked + label + .wrapper {
 	flex-wrap: wrap;
 	gap: 2rem;
 	background: #eaf0f6;
+	margin: 2rem 0;
 }
 
 .card {
@@ -188,7 +193,6 @@ input:checked + label + .wrapper {
 
 .head-text {
 	color: #2e3a5e;
-	font-family: Montserrat;
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 700;
@@ -197,7 +201,6 @@ input:checked + label + .wrapper {
 
 .sub-text {
 	color: #8392a6;
-	font-family: Montserrat;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 500;
@@ -206,7 +209,6 @@ input:checked + label + .wrapper {
 }
 
 .see-more {
-	font-family: Montserrat;
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 26px;
@@ -226,7 +228,6 @@ input:checked + label + .wrapper {
 
 .form-head {
 	color: #2e3a5e;
-	font-family: Montserrat;
 	font-size: 22px;
 	font-style: normal;
 	font-weight: 600;
@@ -235,7 +236,6 @@ input:checked + label + .wrapper {
 
 .form-text {
 	color: #2e3a5e;
-	font-family: Montserrat;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 500;
@@ -245,7 +245,6 @@ input:checked + label + .wrapper {
 
 .form-subtext {
 	color: #8392a6;
-	font-family: Montserrat;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 500;
@@ -448,7 +447,7 @@ input:checked + label + .wrapper {
 		font-size: 12px;
 	}
 	.btn-green {
-		font-size: 10px;
+		font-size: 12px;
 	}
 	.btn-text {
 		font-size: 12px;
@@ -474,5 +473,8 @@ input:checked + label + .wrapper {
 @media screen and (max-width: 576px) {
 	.card {
 		flex: 0 1 auto;
+	}
+	label {
+		height: 40px;
 	}
 }

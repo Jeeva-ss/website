@@ -497,4 +497,11 @@ input:checked + label + .wrapper {
 	label {
 		height: 40px;
 	}
+	.btn-green {
+		padding: 0.15rem 0.5rem;
+		font-size: 10px;
+	}
+	footer {
+		font-size: 12px !important;
+	}
 }

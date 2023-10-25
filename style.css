@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+	font-family: "Montserrat", sans-serif;
+	background: #fff;
+}
+
+.header {
+	height: 500px;
+	background: linear-gradient(rgba(17, 23, 40, 0.8), rgba(17, 23, 40, 0.8)),
+		url("/assets//background.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+	text-align: center;
+}
+
+.header-text {
+	color: #fff;
+	text-align: center;
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	width: 90%;
+	margin: auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: 100%;
+}
+
+label {
+	display: block;
+	padding: 8px 22px;
+	margin: 0 0 1px 0;
+	cursor: pointer;
+	color: #fff;
+	transition: ease 0.5s;
+	border-radius: 5px;
+	background: #11b98f;
+	position: relative;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+label::after {
+	font-family: "Font Awesome 5 Free";
+	content: "\f078";
+	font-size: 22px;
+	font-weight: 600;
+	position: absolute;
+	right: 30px;
+	top: 6px;
+}
+
+input:checked + label::after {
+	content: "\f077";
+}
+
+input + label + .wrapper {
+	display: none;
+}
+
+input:checked + label + .wrapper {
+	display: block;
+}
+
+.input-type {
+	display: none;
+}
+
+.accordion {
+	max-width: 1100px;
+	margin: 2rem auto;
+}
+
+.steps {
+	margin-bottom: 1rem;
+}
+
+.card-container {
+	padding: 2rem;
+	border-radius: 0px 0px 5px 5px;
+	border: 1px solid #eff2f9;
+	background: #eaf0f6;
+}
+
+.name {
+	color: #2e3a5e;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	padding: 1rem 0;
+}
+
+.name-border {
+	border-bottom: 1px solid #d8e1ea;
+	margin-bottom: 1rem;
+}
+
+.line {
+	opacity: 0.7;
+	background: #d8e1ea;
+	width: 970px;
+	height: 1px;
+	margin: auto;
+}
+
+.cards-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 2rem;
+	background: #eaf0f6;
+}
+
+.card {
+	flex: 1 1 30%;
+	height: 475px;
+	border-radius: 20px;
+	border: 1px solid #ddf6f0;
+	background: var(--background-white, #fff);
+	box-shadow: 6px 6px 24px 0px rgba(28, 49, 88, 0.05);
+}
+
+.text-container {
+	padding: 1rem;
+}
+
+.head-text {
+	color: #2e3a5e;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.sub-text {
+	color: #8392a6;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 26px;
+	margin-top: 15px;
+}
+
+.see-more {
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #2e3a5e;
+}
+
+.form {
+	background: #fff;
+	padding: 2rem 1.5rem;
+	border-radius: 20px;
+	border: 1px solid #f0f3f8;
+	box-shadow: 6px 6px 24px 0px rgba(28, 49, 88, 0.05);
+	width: 400px;
+}
+
+.form-head {
+	color: #2e3a5e;
+	font-family: Montserrat;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 32px;
+}
+
+.form-text {
+	color: #2e3a5e;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin: 1rem 0;
+}
+
+.form-subtext {
+	color: #8392a6;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 22px;
+}
+
+.btn-green {
+	border-radius: 5px;
+	background: #11b98f;
+	box-shadow: 0px 6px 23px 0px rgba(4, 20, 16, 0.08);
+	border: none;
+	outline: none;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	font-family: Montserrat;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 29px;
+	margin: 1rem 0;
+	cursor: pointer;
+}
+
+.sub-form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.sub-form input {
+	border-radius: 5px;
+	border: 1px solid #d5e1ed;
+	background: #eaf0f6;
+	padding: 0.5rem 1rem;
+	font-family: Montserrat;
+	font-weight: 600;
+	outline: none;
+	color: #2e3a5e;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 25px;
+}
+
+.btn-solid {
+	border-radius: 5px;
+	border: 1px solid #12aa84;
+	background: #11b98f;
+	color: #fff;
+	font-family: Montserrat;
+	width: 170px;
+	height: 50px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.btn-outline {
+	border-radius: 5px;
+	border: 1px solid #12aa84;
+	background: #fff;
+	color: #12aa84;
+	font-family: Montserrat;
+	width: 170px;
+	height: 50px;
+	outline: none;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.btn-text {
+	color: #2e3a5e;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.d-flex {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.btn-flex {
+	display: flex;
+	gap: 3rem;
+	flex-wrap: wrap;
+}
+
+/* Responsive */
+@media screen and (max-width: 1280px) {
+	.accordion {
+		width: 90%;
+		margin: 2rem auto;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.card {
+		flex: 1 1 30%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.card {
+		flex: 1 1 33%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header-text {
+		font-size: 1rem;
+	}
+	.form {
+		width: auto;
+	}
+	.btn-flex {
+		gap: 1rem;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.header {
+		height: 250px;
+	}
+	.card-container {
+		padding: 1rem;
+	}
+	.name {
+		padding: 1rem 0;
+	}
+	.accordion {
+		margin: 1rem auto;
+	}
+	label::after {
+		font-size: 16px;
+	}
+	label {
+		font-size: 12px;
+		padding: 8px 16px;
+	}
+	.card {
+		flex: 1 1 33%;
+		height: auto;
+	}
+	.btn-outline,
+	.btn-solid {
+		width: 100px;
+		height: 30px;
+		font-size: 12px;
+	}
+
+	.form-head {
+		font-size: 16px;
+	}
+	.form-text {
+		font-size: 14px;
+	}
+	.form-subtext {
+		font-size: 12px;
+	}
+	.btn-green {
+		font-size: 10px;
+	}
+	.btn-text {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.card {
+		flex: 1 1 auto;
+	}
+}
